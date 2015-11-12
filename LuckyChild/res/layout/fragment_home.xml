@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/frag_layout_title" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="100dip" >
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/head_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </android.support.v4.view.ViewPager>
+
+            <LinearLayout
+                android:id="@+id/fragment_sy_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fragment_sy_shopinfo"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_marginTop="10dp"
+            android:background="@color/white" >
+
+            <ImageView
+                android:id="@+id/fragment_sy_shopinfo_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/dl_03" />
+
+            <TextView
+                android:id="@+id/fragment_sy_shopinfo_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/fragment_sy_shopinfo_photo"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/fragment_sy_shopinfo_photo"
+                android:text="好运娃上海宝山店"
+                android:textColor="#000000"
+                android:textSize="@dimen/base_text_size" />
+
+            <TextView
+                android:id="@+id/fragment_sy_shopinfo_vipgrade"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/fragment_sy_shopinfo_addr"
+                android:layout_below="@+id/fragment_sy_shopinfo_addr"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/sy_28"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:text="VIP3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/base_text_size" />
+
+            <TextView
+                android:id="@+id/fragment_sy_shopinfo_grade"
+                android:layout_width="40dp"
+                android:layout_height="20dp"
+                android:layout_alignBaseline="@+id/fragment_sy_shopinfo_vipgrade"
+                android:layout_alignBottom="@+id/fragment_sy_shopinfo_vipgrade"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/fragment_sy_shopinfo_vipgrade"
+                android:background="@drawable/zc_11"
+                android:gravity="center"
+                android:text="总店"
+                android:textColor="#00be9b"
+                android:textSize="@dimen/base_text_size" />
+
+            <TextView
+                android:id="@+id/fragment_sy_shopinfo_NO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/fragment_sy_shopinfo_vipgrade"
+                android:layout_alignBottom="@+id/fragment_sy_shopinfo_grade"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/fragment_sy_shopinfo_grade"
+                android:text="编号:"
+                android:textColor="#999999"
+                android:textSize="@dimen/base_text_size" />
+
+            <TextView
+                android:id="@+id/fragment_sy_shopinfo_NO_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/fragment_sy_shopinfo_NO"
+                android:layout_alignBottom="@+id/fragment_sy_shopinfo_NO"
+                android:layout_toRightOf="@+id/fragment_sy_shopinfo_NO"
+                android:text="12345678"
+                android:textColor="#999999"
+                android:textSize="@dimen/base_text_size" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/fragment_sy_shopinfo_photo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:id="@+id/fragment_sy_shopinfo_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fragment_sy_shopinfo_photo"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:text="123456789"
+                android:textColor="#999999"
+                android:textSize="@dimen/base_text_size" />
+
+            <TextView
+                android:id="@+id/fragment_sy_shopinfo_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/fragment_sy_shopinfo_phonenumber"
+                android:layout_alignBottom="@+id/fragment_sy_shopinfo_phonenumber"
+                android:layout_toLeftOf="@+id/fragment_sy_shopinfo_phonenumber"
+                android:text="登陆手机:"
+                android:textColor="#999999"
+                android:textSize="@dimen/base_text_size" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/DividerLine_style2_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/DividerLine_style2_1"
+            android:orientation="vertical" >
+
+            <GridView
+                android:paddingTop="10dp"
+                android:id="@+id/grid_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:horizontalSpacing="10dp"
+                android:numColumns="4"
+                android:verticalSpacing="20dp" >
+            </GridView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

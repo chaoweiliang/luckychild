@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hanyu.luckychild.MainActivity" >
+
+    <com.hanyu.luckychild.view.NoScrollViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </com.hanyu.luckychild.view.NoScrollViewPager>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_btn_home"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/selector_text_home"
+            android:textSize="@dimen/small_text_size" />
+
+        <RadioButton
+            android:id="@+id/rb_vip"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_btn_vip"
+            android:gravity="center"
+            android:text="会员"
+            android:textColor="@drawable/selector_text_home"
+            android:textSize="@dimen/small_text_size" />
+
+        <RadioButton
+            android:id="@+id/rb_order"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_btn_order"
+            android:gravity="center"
+            android:text="订单"
+            android:textColor="@drawable/selector_text_home"
+            android:textSize="@dimen/small_text_size" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:button="@null"
+            android:drawableTop="@drawable/selector_btn_mine"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/selector_text_home"
+            android:textSize="@dimen/small_text_size" />
+    </RadioGroup>
+
+</LinearLayout>

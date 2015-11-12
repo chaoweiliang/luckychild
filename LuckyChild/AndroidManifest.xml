@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hanyu.luckychild"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:name="com.hanyu.luckychild.global.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hanyu.luckychild.ui.login.LoginActivity_"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.hanyu.luckychild.MainActivity" >
+        </activity>
+        <activity android:name="com.hanyu.luckychild.ui.login.RegisterActivity_" >
+        </activity>
+        <activity android:name="com.hanyu.luckychild.ui.menu.TodayVisitActivity_" >
+        </activity>
+        <activity android:name="com.hanyu.luckychild.ui.visit.TodayVisitDetailActivity_" >
+        </activity>
+        <activity android:name="com.hanyu.luckychild.ui.menu.OrderActivity_" >
+        </activity>
+        <activity android:name="com.hanyu.luckychild.ui.order.OrderDetailActivity_" >
+        </activity>
+        <activity android:name="com.hanyu.luckychild.ui.order.CodeOrderActivity_" >
+        </activity>
+        <activity android:name="com.hanyu.luckychild.ui.menu.MarketCenterActivity_" >
+        </activity>
+        <activity android:name="com.hanyu.luckychild.ui.marketcenter.EventDetailActivity_" >
+        </activity>
+        <activity android:name="com.hanyu.luckychild.ui.member.MemberDetailActivity_" >
+        </activity>
+        <activity android:name="com.hanyu.luckychild.ui.member.AddMemberActivity_" >
+        </activity>
+        <activity android:name="com.hanyu.luckychild.ui.drawcenter.DrawCenterActivity_" >
+        </activity>
+        <activity android:name="com.hanyu.luckychild.ui.drawcenter.DrawCenterDetailActivity_" >
+        </activity>
+    </application>
+
+</manifest>
